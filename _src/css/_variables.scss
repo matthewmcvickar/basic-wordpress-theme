@@ -1,0 +1,41 @@
+// Simplify some Bootstrap variable names.
+$gutter: $grid-gutter-width;
+$border-radius: $border-radius-base;
+
+// Responsive breakpoints.
+$screen-phone-landscape: 550px;
+$screen-tablet:          $screen-sm-min;  //  768px
+$screen-desktop:         $screen-md-min;  //  992px
+$screen-widescreen:      $screen-lg-min;  // 1200px
+$max-width:              $screen-widescreen + ($gutter * 2);
+
+// UI.
+$transition-time: 0.2s;
+
+// Colors.
+$text-dark:     #333;
+$text-medium:   #777;
+$text-light:    #999;
+$text-lighter:  #aaa;
+$text-lightest: #ddd;
+
+$bg-darkest:  #333;
+$bg-darker:   #666;
+$bg-dark:     #999;
+$bg-medium:   #aaa;
+$bg-light:    #ccc;
+$bg-lighter:  #eee;
+$bg-lightest: #fcfcfc;
+
+$border-light:    #e5e5e5;
+$border-lighter:  #ebebeb;
+$border-lightest: #f8f8f8;
+$border-standard: $border-light;
+
+$blue: #0099FF;
+
+// Fonts.
+$font-fallback: Helvetica, Arial, sans-serif;
+
+$font-heading:  $font-fallback;
+$font-body:     $font-fallback;

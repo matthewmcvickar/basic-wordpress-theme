@@ -1,0 +1,34 @@
+// Sticky footer.
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header-and-content-container {
+  flex: 1;
+}
+
+// Containers.
+// TODO: Remove the container mixin and .container class if using Bootstrap.
+@mixin container {
+  @include clearfix;
+
+  margin-left: $gutter;
+  margin-right: $gutter;
+
+  max-width: $max-width;
+
+  @media (min-width: $max-width + $gutter*2) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.container {
+  @include container;
+}

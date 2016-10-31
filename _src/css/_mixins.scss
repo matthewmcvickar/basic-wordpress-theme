@@ -1,0 +1,36 @@
+// Clearfix.
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Flexfix.
+// Hides empty elements while aligning hanging elements to the grid, so that
+// the final object in a flexbox grid layout doesn't span the width of the
+// container.
+//
+// USAGE:
+// 1. Apply this mixin to the flexbox container element.
+// 2. Add extra, empty immediate-child elements to the flexbox container. There
+//    should be as many extra empty elements as there are columns in the grid.
+//
+// Example; a three-column grid with an orphan on the second row:
+//   <div class="flex-container">
+//     <div class="flex-item">Foo</div>
+//     <div class="flex-item">Bar</div>
+//     <div class="flex-item">Baz</div>
+//     <div class="flex-item">Quux</div>
+//     <div class="flex-item"></div> <!-- Empty element for the flexfix. -->
+//     <div class="flex-item"></div> <!-- Empty element for the flexfix. -->
+//   </div>
+//
+// ¯\_(ツ)_/¯
+@mixin flexfix {
+  & > *:empty {
+    height: 0 !important;
+    visibility: hidden;
+  }
+}

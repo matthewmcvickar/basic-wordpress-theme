@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-body;
+}
+
+::selection {
+  background: $blue;
+  color: white;
+  text-shadow: none;
+}
+
+// Images should never be wider than their container.
+img {
+  display: inline-block;
+
+  max-width: 100%;
+  height: auto;
+
+  max-height: 100%;
+}
+
+// Hide empty paragraphs created by the `wpautop` filter.
+p:empty {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  clear: none !important;
+}
+
+// Style default alignment classes from WordPress.
+@media (min-width: $screen-tablet) {
+  img.alignright {
+    float: right;
+    margin-left: 2rem;
+  }
+
+  img.alignleft {
+    float: left;
+    margin-left: 2rem;
+  }
+}
+
+img.alignnone {
+  margin: 2rem auto;
+}
+
+img.aligncenter {
+  display: block;
+  margin: 2rem auto;
+}

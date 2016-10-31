@@ -1,0 +1,19 @@
+# Files built for production.
+_dist
+style.css
+js
+img
+!_src/*
+admin/admin.css
+
+# Workflow
+.tmp
+.grunt
+.sass-cache
+node_modules
+npm-debug.log
+error_log
+*.map
+
+# OS-generated files
+.DS_Store

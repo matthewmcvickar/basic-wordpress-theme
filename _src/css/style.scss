@@ -1,0 +1,28 @@
+// TODO: Search all files for 'TODO' and do the TODOs before getting started.
+
+/*!
+ * Theme Name: TODO
+ * Version:    1
+ * Author:     Matthew McVickar
+ */
+
+// Libraries.
+@import "normalize.css/normalize"; // TODO: Remove if using Bootstrap!
+@import "bootstrap-custom";
+
+// Fonts, variables, mixins, other shared CSS.
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "animations";
+
+// Styling.
+@import "base";
+@import "layout"; // TODO: Remove if using Bootstrap!
+@import "icons";
+@import "header";
+@import "footer";
+
+// Pages.
+@import "page-home";
+@import "page-404";
