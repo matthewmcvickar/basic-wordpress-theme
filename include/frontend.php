@@ -1,5 +1,11 @@
 <?php
 
+// Add <title> tag support.
+function add_title_tag_support() {
+  add_theme_support('title-tag');
+}
+add_action('after_setup_theme', 'add_title_tag_support');
+
 // Remove emojicons.
 remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
