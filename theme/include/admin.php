@@ -27,7 +27,8 @@ add_action('admin_menu', 'hide_acf_from_admin_sidebar', 999);
 
 // Load admin CSS and JavaScript.
 function enqueue_admin_scripts_and_styles() {
-  wp_enqueue_style('admin-css', get_bloginfo('template_directory') . '/admin/admin.css');
+  wp_enqueue_script('theme-admin-js', get_bloginfo('template_directory') . '/admin/admin.js');
+  wp_enqueue_style('theme-admin', get_bloginfo('template_directory') . '/admin/admin.css');
 }
 add_action('admin_enqueue_scripts', 'enqueue_admin_scripts_and_styles');
 

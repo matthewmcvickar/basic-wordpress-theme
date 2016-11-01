@@ -6,6 +6,13 @@ function add_title_tag_support() {
 }
 add_action('after_setup_theme', 'add_title_tag_support');
 
+// Include theme stylesheet and JavaScript.
+function load_theme_scripts_and_stylesheets() {
+  wp_enqueue_script('theme-js', get_stylesheet_directory_uri() . '/js/script.js', null, SITE_VERSION, true);
+  wp_enqueue_style('theme-style', get_stylesheet_uri(), null, SITE_VERSION);
+}
+add_action('wp_enqueue_scripts', 'load_theme_scripts_and_stylesheets');
+
 // Remove emojicons.
 remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
