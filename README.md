@@ -123,7 +123,7 @@ These three tasks only need to be done the first time you work on the site:
 
 	This will take a minute or two.
 
-### Development Processe
+### Development Process
 
 To start developing the site:
 
